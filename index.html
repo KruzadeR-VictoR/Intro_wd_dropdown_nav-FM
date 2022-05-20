@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- TailwindCSS Linked -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex flex-col">
+      <!-- Navbar   -->
+      <nav class="navbar flex justify-between items-center">
+        <div class="menu flex gap-x-20">
+          <div class="logo">
+            <a href="" target="_blank"
+              ><img src="./images/logo.svg" alt=""
+            /></a>
+          </div>
+          <ul class="menulist flex items-center gap-x-10">
+            <li class="features">
+              <a class="flex items-center gap-x-1" href=""
+                >Features
+                <img
+                  class="f-arrow h-[10px]"
+                  src="./images/down-aarow.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="dropdown-menu flex flex-col gap-y-3">
+                <li>
+                  <a class="flex items-center gap-x-2" href="">
+                    <img src="./images/icon-todo.svg" alt="" />
+                    Todo List</a
+                  >
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2" href="">
+                    <img src="./images/icon-calendar.svg" alt="" />
+                    Calender</a
+                  >
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2" href="">
+                    <img src="./images/icon-reminders.svg" alt="" />
+                    Reminders</a
+                  >
+                </li>
+                <li>
+                  <a class="flex items-center gap-x-2" href="">
+                    <img src="./images/icon-planning.svg" alt="" />
+                    Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="company">
+              <a class="flex items-center gap-x-1" href=""
+                >Company
+                <img
+                  class="c-arrow h-[10px]"
+                  src="./images/down-aarow.svg"
+                  alt=""
+                />
+              </a>
+              <ul class="dropdown-company flex flex-col gap-y-3">
+                <li>
+                  <a href="">History</a>
+                </li>
+                <li>
+                  <a href="">Our Team</a>
+                </li>
+                <li>
+                  <a href="">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="Join-us flex items-center gap-x-10">
+          <li>
+            <a href="">Login</a>
+          </li>
+          <a href=""><button class="Register">Register</button></a>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation  -->
+      <nav class="mobile flex justify-between">
+        <div class="logo p-[1.5rem]">
+          <a href="">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+        </div>
+        <img class="control" src="./images/icon-menu.svg" alt="" />
+        <ul class="menulist flex flex-col gap-y-5">
+          <li class="feature-mobile">
+            <a class="flex items-center gap-x-1" href=""
+              >Features
+              <img class="f-arrw h-[10px]" src="./images/down-aarow.svg" alt="" />
+            </a>
+            <ul class="dropdown-feature flex flex-col gap-y-3 pl-10 p-3">
+              <li>
+                <a class="flex gap-x-3" href="">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  Todo List</a
+                >
+              </li>
+              <li>
+                <a class="flex gap-x-3" href="">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  Calendar</a
+                >
+              </li>
+              <li>
+                <a class="flex gap-x-3" href="">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  Reminders</a
+                >
+              </li>
+              <li>
+                <a class="flex gap-x-3" href="">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  Planning</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="company-mobile">
+            <a class="flex items-center gap-x-1" href=""
+              >Company
+              <img class="c-arrw h-[10px]" src="./images/down-aarow.svg" alt="" />
+            </a>
+            <ul class="dropdown-comp flex flex-col gap-y-3 pl-10 p-3">
+              <li><a href="">History</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Careers</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <div class="Join-us flex flex-col justify-center gap-y-3 mt-8">
+            <li class="text-center">
+              <a href="">Login</a>
+            </li>
+            <button class="Register">Register</button>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- Hero  -->
+      <div class="hero flex-1 flex items-center px-[10rem] overflow-hidden">
+        <div
+          class="left h-full basis-1/2 flex flex-col justify-center items-start p-5"
+        >
+          <h1 class="caption text-7xl font-bold text-[#141414]">
+            Make <span class="block"> remote work</span>
+          </h1>
+          <p class="caption text-[#696969] w-3/5 mt-10">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href=""><button class="caption learn mt-10">Learn more</button></a>
+          <div class="caption sponsers w-full flex gap-x-8 mt-20">
+            <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="right h-full basis-1/2 flex justify-center items-center p-5"
+        >
+          <img class="desktop" src="./images/image-hero-desktop.png" alt="" />
+          <img
+            class="mobile-hero"
+            src="./images/image-hero-mobile.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js"
+    integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./script.js"></script>
+</html>

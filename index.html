@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
     <!-- TailwindCSS Linked -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="style.css" />
     <style>
       .attribution {
@@ -28,15 +28,11 @@
     </style>
   </head>
   <body>
-    <section class="flex flex-col">
+    <main class="flex flex-col">
       <!-- Navbar   -->
       <nav class="navbar flex justify-between items-center">
-        <div class="menu flex gap-x-20">
-          <div class="logo">
-            <a href="" target="_blank"
-              ><img src="./images/logo.svg" alt=""
-            /></a>
-          </div>
+        <div class="menu flex gap-x-20">          
+            <img src="./images/logo.svg" alt="logo" class="logo" />          
           <ul class="menulist flex items-center gap-x-10">
             <li class="features">
               <a class="flex items-center gap-x-1" href=""
@@ -107,7 +103,7 @@
           <li>
             <a href="">Login</a>
           </li>
-          <a href=""><button class="Register">Register</button></a>
+          <div><button class="Register">Register</button></div>
         </div>
       </nav>
 
@@ -123,7 +119,11 @@
           <li class="feature-mobile">
             <a class="flex items-center gap-x-1" href=""
               >Features
-              <img class="f-arrw h-[10px]" src="./images/down-aarow.svg" alt="" />
+              <img
+                class="f-arrw h-[10px]"
+                src="./images/down-aarow.svg"
+                alt=""
+              />
             </a>
             <ul class="dropdown-feature flex flex-col gap-y-3 pl-10 p-3">
               <li>
@@ -155,7 +155,11 @@
           <li class="company-mobile">
             <a class="flex items-center gap-x-1" href=""
               >Company
-              <img class="c-arrw h-[10px]" src="./images/down-aarow.svg" alt="" />
+              <img
+                class="c-arrw h-[10px]"
+                src="./images/down-aarow.svg"
+                alt=""
+              />
             </a>
             <ul class="dropdown-comp flex flex-col gap-y-3 pl-10 p-3">
               <li><a href="">History</a></li>
@@ -190,7 +194,7 @@
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <a href=""><button class="caption learn mt-10">Learn more</button></a>
+          <div><button class="caption learn mt-10">Learn more</button></div>
           <div class="caption sponsers w-full flex gap-x-8 mt-20">
             <img src="./images/client-databiz.svg" alt="" />
             <img src="./images/client-audiophile.svg" alt="" />
@@ -209,7 +213,7 @@
           />
         </div>
       </div>
-    </section>
+    </main>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"

@@ -7,7 +7,7 @@ const dropdownCompany = document.querySelector(".dropdown-company");
 
 const control = document.querySelector(".control");
 const mobile = document.querySelector(" .mobile .menulist");
-const section = document.querySelector(" section");
+const section = document.querySelector("main");
 
 control.addEventListener("click", () => {
   mobile.classList.toggle("toggle-menu");

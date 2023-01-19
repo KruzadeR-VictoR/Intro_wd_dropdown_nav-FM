@@ -24,6 +24,9 @@ featureBtn.addEventListener("click", (e) => {
   e.preventDefault();
   dropdown.classList.toggle("active");
   fArrw.classList.toggle("arrow");
+  // displays one dropdown at a time
+  dropdownCompany.classList.remove("active");
+  cArrw.classList.remove("arrow");
 });
 
 // Company Dropdown
@@ -31,6 +34,9 @@ companyBtn.addEventListener("click", (e) => {
   e.preventDefault();
   dropdownCompany.classList.toggle("active");
   cArrw.classList.toggle("arrow");
+  // displays one dropdown at a time
+  dropdown.classList.remove("active");
+  fArrw.classList.remove("arrow");
 });
 
 //| Mobile Dropdown
@@ -52,7 +58,7 @@ compMobile.addEventListener("click", (e) => {
   cAr.classList.toggle("arrow");
 });
 
-// Animation
+//| Animation
 gsap.registerPlugin(ScrollTrigger);
 
 let tl = gsap.timeline({ defaults: { duration: 1, stagger: { amount: 1 } } });

@@ -31,6 +31,9 @@
 .gap-x-1 {
   gap: 0.25rem;
 }
+.gap-x-2 {
+  gap: 0.50rem;
+}
 .gap-x-3 {
   gap: 0.75rem;
 }
@@ -122,19 +125,20 @@ main {
       display: none;
       position: absolute;
       height: 10rem;
-      width: 10rem;
-      right: 0;
+      width: 10rem;      
+      left: 50%;
+      translate: -50% 0;
       top: 100%;
+      list-style: none;
       padding: 1rem;
-      margin-top: 0.5rem;
+      margin-top: 0.5rem;      
       border-radius: 10px;
       background-color: white;
       box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.151);
       transition: all 300ms ease-in-out;
     }
     .dropdown-company {
-      display: none;
-      left: 0;
+      display: none;      
       height: 8rem;
       width: 8rem;
     }
